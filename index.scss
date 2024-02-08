@@ -3,13 +3,12 @@
 }
 
 .page {
-  width: 1440px;
-  height: 1000px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: auto;
   background-color: #141b1c;
   font-family: 'Montserrat', sans-serif;
 }
