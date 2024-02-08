@@ -24,7 +24,7 @@ html {
   color: #fff;
 }
 .price-card__title {
-  width: 165px;
+  width: 175px;
   margin: auto;
   margin-top: 33px;
   font-size: 20px;
@@ -34,7 +34,7 @@ html {
 .price-card__title::first-line {
   font-weight: 700;
   font-size: 35px;
-  line-height: 42px;
+  line-height: 43px;
 }
 .price-card__business {
   position: relative;
