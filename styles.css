@@ -21,6 +21,9 @@
   background-color: #334247;
   color: #fff;
 }
+.price-card:last-of-type {
+  margin-right: 0;
+}
 .price-card__title {
   width: 175px;
   margin: auto;

@@ -20,6 +20,9 @@
   margin-right: 18px;
   background-color: #334247;
   color: #fff;
+  &:last-of-type {
+    margin-right: 0;
+  }
   &__title {
     width: 175px;
     margin: auto;
