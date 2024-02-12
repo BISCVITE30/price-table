@@ -1,6 +1,6 @@
 # Price Card Project
 
-## [Site link](https://github.com/BISCVITE30/price-table/blob/master/index.html)
+## [Site link](https://biscvite30.github.io/price-table/)
 
 Layout support desktop (up-to-1440) version
 
