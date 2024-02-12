@@ -1,158 +1,158 @@
+@import 'variables.scss';
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .page {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #141b1c;
-  font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 .price-card {
-  width: 380px;
-  height: 770px;
-  text-align: center;
-  margin-right: 18px;
-  background-color: #334247;
-  color: #fff;
-  &:last-of-type {
-    margin-right: 0;
-  }
-  &__title {
-    width: 175px;
-    margin: auto;
-    margin-top: 33px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 300;
-    &::first-line {
-      font-weight: 700;
-      font-size: 35px;
-      line-height: 43px;
-    }
-  }
-  &__business {
-    position: relative;
-  }
-  &__badge {
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
-    position: absolute;
-    &::before,
-    &::after {
-      position: absolute;
-      z-index: -1;
-      content: '';
-      display: block;
-    }
-    & span {
-      position: absolute;
-      display: block;
-      width: 180px;
-      padding: 4px 0;
-      background-color: #dc3f45;
-      color: #fff;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 17px;
-      text-transform: uppercase;
-      text-align: center;
-    }
-    &-top-right {
-      top: 0px;
-      right: 0px;
-      &::before,
-      &::after {
-        border-top-color: transparent;
-        border-right-color: transparent;
-      }
-      &::before {
-        top: 0;
-        left: 0;
-      }
-      &::after {
-        bottom: 0;
-        right: 0;
-      }
-      & span {
-        left: -15px;
-        top: 30px;
-        transform: rotate(45deg);
-      }
-    }
-  }
-  &__price {
-    margin: 0;
-    margin-top: 33px;
-    height: 105px;
-    line-height: 105px;
-    font-size: 55px;
-    font-weight: 700;
-    &-basic {
-      background-color: #5bb189;
-    }
-    &-business {
-      background-color: #3a6ba5;
-    }
-    &-webshop {
-      background-color: #ec632a;
-    }
-  }
-
-  &__description {
-    width: 327px;
-    margin: auto;
-    margin-top: 40px;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-  }
-
-  &__options-list {
-    height: 300px;
-    margin: 0;
-    margin-top: 40px;
-    padding: 0;
-    list-style-type: none;
-    &__item {
-      line-height: 50px;
-      font-weight: 300;
-      font-size: 15px;
-      text-align: left;
-      &:nth-child(odd) {
-        background-color: #2a3438;
-      }
-    }
-    &_marker {
-      margin: 0px 22px;
-    }
-  }
-
-  &__order-btn {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    width: 380px;
+    height: 770px;
+    text-align: center;
+    margin-right: 18px;
+    background-color: #334247;
     color: #fff;
-    &_basic {
-      background-color: #5bb189;
+    &:last-of-type {
+        margin-right: 0;
     }
-    &_business {
-      background-color: #3a6ba5;
+    &__title {
+        width: 175px;
+        margin: auto;
+        margin-top: 33px;
+        font-size: 20px;
+        line-height: 24px;
+        &::first-line {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 43px;
+        }
     }
-    &_website {
-      background-color: #ec632a;
+    &__business {
+        position: relative;
     }
-  }
+    &__badge {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        position: absolute;
+        &::before,
+        &::after {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            display: block;
+        }
+        & span {
+            position: absolute;
+            display: block;
+            width: 180px;
+            padding: 4px 0;
+            background-color: #dc3f45;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &-top-right {
+            top: 0px;
+            right: 0px;
+            &::before,
+            &::after {
+                border-top-color: transparent;
+                border-right-color: transparent;
+            }
+            &::before {
+                top: 0;
+                left: 0;
+            }
+            &::after {
+                bottom: 0;
+                right: 0;
+            }
+            & span {
+                left: -15px;
+                top: 30px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    &__price {
+        margin: 0;
+        margin-top: 33px;
+        height: 105px;
+        line-height: 105px;
+        font-size: 55px;
+        font-weight: 700;
+        &-basic {
+            background-color: $card-basic-color;
+        }
+        &-business {
+            background-color: $card-bussines-color;
+        }
+        &-webshop {
+            background-color: $card-webshop-color;
+        }
+    }
+
+    &__description {
+        width: 327px;
+        margin: auto;
+        margin-top: 40px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    &__options-list {
+        height: 300px;
+        margin: 0;
+        margin-top: 40px;
+        padding: 0;
+        list-style-type: none;
+        &__item {
+            line-height: 50px;
+            font-size: 15px;
+            text-align: left;
+            &:nth-child(odd) {
+                background-color: #2a3438;
+            }
+        }
+        &_marker {
+            margin: 0px 22px;
+        }
+    }
+
+    &__order-btn {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+        &_basic {
+            background-color: $card-basic-color;
+        }
+        &_business {
+            background-color: $card-bussines-color;
+        }
+        &_website {
+            background-color: $card-webshop-color;
+        }
+    }
 }

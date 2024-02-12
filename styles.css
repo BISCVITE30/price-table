@@ -11,6 +11,7 @@
   align-items: center;
   background-color: #141b1c;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .price-card {
@@ -30,7 +31,6 @@
   margin-top: 33px;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 300;
 }
 .price-card__title::first-line {
   font-weight: 700;
@@ -107,7 +107,6 @@
   width: 327px;
   margin: auto;
   margin-top: 40px;
-  font-weight: 300;
   font-size: 15px;
   line-height: 18px;
 }
@@ -120,7 +119,6 @@
 }
 .price-card__options-list__item {
   line-height: 50px;
-  font-weight: 300;
   font-size: 15px;
   text-align: left;
 }
