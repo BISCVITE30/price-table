@@ -17,7 +17,6 @@ body {
   display: flex;
   margin: auto;
   width: 1175px;
-  justify-content: space-between;
 }
 
 .price-card {
@@ -28,11 +27,11 @@ body {
   color: #fff;
   margin-right: 15px;
   &__options-list {
-  height: 300px;
-  margin: 0;
-  margin-top: 40px;
-  padding: 0;
-  list-style-type: none;
+    height: 300px;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    list-style-type: none;
   }
   &:last-child {
     margin: 0;

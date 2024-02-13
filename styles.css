@@ -15,7 +15,6 @@ body {
   display: flex;
   margin: auto;
   width: 1175px;
-  justify-content: space-between;
 }
 
 .price-card {
