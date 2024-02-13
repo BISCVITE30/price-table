@@ -1,140 +1,141 @@
 @import 'variables.scss';
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: $main-color;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: $main-color;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  display: flex;
 }
 
 .page {
-    display: flex;
-    margin: auto;
-    width: 1175px;
-    justify-content: space-between;
+  display: flex;
+  margin: auto;
+  width: 1175px;
+  justify-content: space-between;
 }
 
 .price-card {
-    width: 380px;
-    height: 770px;
-    text-align: center;
-    background-color: #334247;
-    color: #fff;
-    margin-right: 15px;
+  width: 380px;
+  height: 770px;
+  text-align: center;
+  background-color: #334247;
+  color: #fff;
+  margin-right: 15px;
+  &__options-list {
+  height: 300px;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  list-style-type: none;
+  }
+  &:last-child {
+    margin: 0;
+  }
 
-    &:last-child {
-        margin: 0;
+  &__title {
+    width: 175px;
+    margin: auto;
+    margin-top: 33px;
+    font-size: 20px;
+    line-height: 24px;
+    &::first-line {
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 43px;
     }
+  }
 
-    &__title {
-        width: 175px;
-        margin: auto;
-        margin-top: 33px;
-        font-size: 20px;
-        line-height: 24px;
-        &::first-line {
-            font-weight: 700;
-            font-size: 35px;
-            line-height: 43px;
-        }
+  &_business {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__promotion {
+    position: absolute;
+    top: 31px;
+    right: -30px;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 147px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgba(220, 63, 69, 1);
+  }
+
+  &__price {
+    margin: 0;
+    margin-top: 33px;
+    height: 105px;
+    line-height: 105px;
+    font-size: 55px;
+    font-weight: 700;
+    &_basic {
+      background-color: $card-basic-color;
     }
 
     &_business {
-        position: relative;
-        overflow: hidden;
+      background-color: $card-bussines-color;
     }
 
-    &__promotion {
-        position: absolute;
-        top: 31px;
-        right: -30px;
-        transform: rotate(45deg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 147px;
-        height: 25px;
-        font-size: 14px;
-        font-weight: 700;
-        background-color: rgba(220, 63, 69, 1);
+    &_webshop {
+      background-color: $card-webshop-color;
+    }
+  }
+
+  &__description {
+    width: 327px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  &__order-btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    cursor: pointer;
+    &_basic {
+      background-color: $card-basic-color;
     }
 
-    &__price {
-        margin: 0;
-        margin-top: 33px;
-        height: 105px;
-        line-height: 105px;
-        font-size: 55px;
-        font-weight: 700;
-        &_basic {
-            background-color: $card-basic-color;
-        }
-
-        &_business {
-            background-color: $card-bussines-color;
-        }
-
-        &_webshop {
-            background-color: $card-webshop-color;
-        }
+    &_business {
+      background-color: $card-bussines-color;
     }
 
-    &__description {
-        width: 327px;
-        margin: auto;
-        margin-top: 40px;
-        font-size: 15px;
-        line-height: 18px;
+    &_website {
+      background-color: $card-webshop-color;
     }
-
-    &__order-btn {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        width: 150px;
-        height: 40px;
-        border: none;
-        border-radius: 20px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #fff;
-        cursor: pointer;
-        &_basic {
-            background-color: $card-basic-color;
-        }
-
-        &_business {
-            background-color: $card-bussines-color;
-        }
-
-        &_website {
-            background-color: $card-webshop-color;
-        }
-    }
+  }
 }
 
 .options-list {
-    height: 300px;
-    margin: 0;
-    margin-top: 40px;
-    padding: 0;
-    list-style-type: none;
-    &__item {
-        line-height: 50px;
-        font-size: 15px;
-        text-align: left;
-        &:nth-child(odd) {
-            background-color: #2a3438;
-        }
+  &__item {
+    line-height: 50px;
+    font-size: 15px;
+    text-align: left;
+    &:nth-child(odd) {
+      background-color: #2a3438;
     }
+  }
 
-    &_marker {
-        margin: 0px 22px;
-    }
+  &_marker {
+    margin: 0px 22px;
+  }
 }
