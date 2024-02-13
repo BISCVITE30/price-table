@@ -27,9 +27,11 @@ body {
     background-color: #334247;
     color: #fff;
     margin-right: 15px;
+
     &:last-child {
         margin: 0;
     }
+
     &__title {
         width: 175px;
         margin: auto;
@@ -42,57 +44,27 @@ body {
             line-height: 43px;
         }
     }
-    &__business {
+
+    &_business {
         position: relative;
-    }
-    &__badge {
-        width: 120px;
-        height: 120px;
         overflow: hidden;
-        position: absolute;
-        &::before,
-        &::after {
-            position: absolute;
-            z-index: -1;
-            content: '';
-            display: block;
-        }
-        & span {
-            position: absolute;
-            display: block;
-            width: 180px;
-            padding: 4px 0;
-            background-color: #dc3f45;
-            color: #fff;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-        &-top-right {
-            top: 0px;
-            right: 0px;
-            &::before,
-            &::after {
-                border-top-color: transparent;
-                border-right-color: transparent;
-            }
-            &::before {
-                top: 0;
-                left: 0;
-            }
-            &::after {
-                bottom: 0;
-                right: 0;
-            }
-            & span {
-                left: -15px;
-                top: 30px;
-                transform: rotate(45deg);
-            }
-        }
     }
+
+    &__promotion {
+        position: absolute;
+        top: 31px;
+        right: -30px;
+        transform: rotate(45deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 147px;
+        height: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: rgba(220, 63, 69, 1);
+    }
+
     &__price {
         margin: 0;
         margin-top: 33px;
@@ -100,13 +72,15 @@ body {
         line-height: 105px;
         font-size: 55px;
         font-weight: 700;
-        &-basic {
+        &_basic {
             background-color: $card-basic-color;
         }
-        &-business {
+
+        &_business {
             background-color: $card-bussines-color;
         }
-        &-webshop {
+
+        &_webshop {
             background-color: $card-webshop-color;
         }
     }
@@ -119,25 +93,7 @@ body {
         line-height: 18px;
     }
 
-    &__options-list {
-        height: 300px;
-        margin: 0;
-        margin-top: 40px;
-        padding: 0;
-        list-style-type: none;
-        &__item {
-            line-height: 50px;
-            font-size: 15px;
-            text-align: left;
-            &:nth-child(odd) {
-                background-color: #2a3438;
-            }
-        }
-        &_marker {
-            margin: 0px 22px;
-        }
-    }
-
+    
     &__order-btn {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -153,11 +109,33 @@ body {
         &_basic {
             background-color: $card-basic-color;
         }
+        
         &_business {
             background-color: $card-bussines-color;
         }
+        
         &_website {
             background-color: $card-webshop-color;
         }
+    }
+}
+
+.options-list {
+    height: 300px;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    list-style-type: none;
+    &__item {
+        line-height: 50px;
+        font-size: 15px;
+        text-align: left;
+        &:nth-child(odd) {
+            background-color: #2a3438;
+        }
+    }
+
+    &_marker {
+        margin: 0px 22px;
     }
 }
