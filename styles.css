@@ -136,6 +136,7 @@
   font-size: 14px;
   line-height: 17px;
   color: #fff;
+  cursor: pointer;
 }
 .price-card__order-btn_basic {
   background-color: #5bb189;
