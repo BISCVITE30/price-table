@@ -2,17 +2,20 @@
   box-sizing: border-box;
 }
 
-.page {
+body {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0px 120px;
   background-color: #141b1c;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  display: flex;
+}
+
+.page {
+  display: flex;
+  margin: auto;
+  width: 1175px;
+  justify-content: space-between;
 }
 
 .price-card {
@@ -21,6 +24,10 @@
   text-align: center;
   background-color: #334247;
   color: #fff;
+  margin-right: 15px;
+}
+.price-card:last-child {
+  margin: 0;
 }
 .price-card__title {
   width: 175px;
