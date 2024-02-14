@@ -86,7 +86,7 @@ body {
   line-height: 18px;
 }
 .price-card__order-btn {
-  margin: 40px 0;
+  margin: 40px 0 0;
   width: 150px;
   height: 40px;
   border: none;
