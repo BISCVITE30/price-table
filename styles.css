@@ -37,8 +37,7 @@ body {
 }
 .price-card__title {
   width: 175px;
-  margin: auto;
-  margin-top: 33px;
+  margin: 33px auto auto;
   font-size: 20px;
   line-height: 24px;
 }
@@ -66,8 +65,7 @@ body {
   background-color: rgb(220, 63, 69);
 }
 .price-card__price {
-  margin: 0;
-  margin-top: 33px;
+  margin: 33px 0 0;
   height: 105px;
   line-height: 105px;
   font-size: 55px;
@@ -84,8 +82,7 @@ body {
 }
 .price-card__description {
   width: 327px;
-  margin: auto;
-  margin-top: 40px;
+  margin: 40px auto auto;
   font-size: 15px;
   line-height: 18px;
 }
@@ -120,7 +117,7 @@ body {
 .options-list__item:nth-child(odd) {
   background-color: #2a3438;
 }
-.options-list_marker {
+.options-list__marker {
   margin: 0px 21.5px;
 }
 

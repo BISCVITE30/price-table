@@ -26,6 +26,7 @@ body {
   background-color: #334247;
   color: #fff;
   margin-right: 15px;
+
   &__options-list {
     height: 300px;
     margin: 0;
@@ -33,16 +34,17 @@ body {
     padding: 0;
     list-style-type: none;
   }
+
   &:last-child {
     margin: 0;
   }
 
   &__title {
     width: 175px;
-    margin: auto;
-    margin-top: 33px;
+    margin: 33px auto auto;
     font-size: 20px;
     line-height: 24px;
+
     &::first-line {
       font-weight: 700;
       font-size: 35px;
@@ -71,12 +73,12 @@ body {
   }
 
   &__price {
-    margin: 0;
-    margin-top: 33px;
+    margin: 33px 0 0;
     height: 105px;
     line-height: 105px;
     font-size: 55px;
     font-weight: 700;
+
     &_basic {
       background-color: $card-basic-color;
     }
@@ -92,8 +94,7 @@ body {
 
   &__description {
     width: 327px;
-    margin: auto;
-    margin-top: 40px;
+    margin: 40px auto auto;
     font-size: 15px;
     line-height: 18px;
   }
@@ -110,6 +111,7 @@ body {
     line-height: 17px;
     color: #fff;
     cursor: pointer;
+
     &_basic {
       background-color: $card-basic-color;
     }
@@ -129,12 +131,13 @@ body {
     line-height: 50px;
     font-size: 15px;
     text-align: left;
+
     &:nth-child(odd) {
       background-color: #2a3438;
     }
   }
 
-  &_marker {
+  &__marker {
     margin: 0px 21.5px;
   }
 }
